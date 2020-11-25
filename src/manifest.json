@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Ilias Video-Download-Button",
+    "version": "1.0.1",
+    
+    "description" : "Adds missing download buttons to videos at Ilias Open Cast pages.",
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*ilias.php*xocteventgui*"
+            ],
+            "js": [
+                "/content_script.js"
+            ]
+        }
+    ],
+    
+    "permissions": []
+}
