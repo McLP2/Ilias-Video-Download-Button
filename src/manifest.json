@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Ilias Video-Download-Button",
-    "version": "1.0.1",
+    "version": "1.0.2",
     
     "description" : "Adds missing download buttons to videos at Ilias Open Cast pages.",
     
