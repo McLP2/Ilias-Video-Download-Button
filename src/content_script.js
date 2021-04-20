@@ -1,9 +1,10 @@
 var tryAddButtons = setInterval(addButtons, 100);
 setTimeout(() => clearTimeout(tryAddButtons), 300000);
 function addButtons() {
-    for (let group of document.getElementsByClassName("btn-group-vertical")) {
+    for (let group of document.querySelectorAll(".btn-group-vertical, .xoct_event_buttons")) {
         if (group.childElementCount === 1) {
-            let playLink = new URL(group.firstElementChild.href);
+            let playButton = group.firstElementChild;
+            let playLink = new URL(playButton.href);
             let url = new URL(window.location.href);
             let vars = {
                 ref_id : playLink.searchParams.get("ref_id"),
@@ -16,8 +17,7 @@ function addButtons() {
             }
             let searchString = new URLSearchParams(vars).toString();
             let button = document.createElement("a");
-            button.classList.add("btn");
-            button.classList.add("btn-info");
+            button.classList = playButton.classList;
             button.href=`ilias.php?${searchString}`;
             button.innerHTML="Download";
             button.target = "_self";
