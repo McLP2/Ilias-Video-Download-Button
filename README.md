@@ -2,8 +2,8 @@
 Adds missing download buttons to videos at Ilias Open Cast pages.
 
 ## Download
-[Firefox-Addon](https://addons.mozilla.org/de/firefox/addon/ilias-video-download-button/)
-[Chrome-Erweiterung](https://chrome.google.com/webstore/detail/ijpkmikochgighahhahpibabcemkdgck)
+[Firefox](https://addons.mozilla.org/de/firefox/addon/ilias-video-download-button/)
+[Chrome](https://chrome.google.com/webstore/detail/ijpkmikochgighahhahpibabcemkdgck)
 
 ## Motivation
 Some videos do not show the download button, but that is stupid and annoying, especially 
